@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>E entre para nosso time</h1>
+            <img src="planando.svg" class="left-login-img" alt="highfive">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" onchange="validateFields()" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" onchange="validateFields()" placeholder="Senha">
+                </div>
+                <button onclick="LogInCheck()" id="btn-login" class="btn-login" disabled="true">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

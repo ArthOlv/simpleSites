@@ -1,0 +1,80 @@
+<html>
+    <body>
+
+        <div id="centralizar">
+            <button id="comic-button">Clicks!</button>
+        </div>
+        <div id="noclick">
+            O botão foi clicado <span 
+            id="display">0</span> vezes.
+        </div>
+    </body>
+</html>
+
+
+<script>
+    var counter = 0;
+    var button = document.getElementById("comic-button");
+    var disp = document.getElementById("display");
+
+    button.onclick = function () {
+        counter++;
+        disp.innerHTML = counter;
+    }
+</script>
+
+<style>
+
+    body{
+        background-color: #000000a6;
+        background-image: url(fundo\ roxo\ 1920.jpg);
+        background-blend-mode: darken;
+    }
+
+#noclick{
+    text-shadow: 3px 5px 5px #000000;
+    color: #f5f5f5;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#centralizar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #f5f5f5;
+  background-color: #9575DE;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  scale: 0.9;
+}
+
+#comic-button:hover {
+  background-color: #f5f5f5;
+  color: #9575DE;
+  border: 2px solid #9575DE;
+  box-shadow: 5px 5px 0px #9575DE;
+  scale: 1;
+}
+
+#comic-button:active {
+  background-color: #2b2730;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+</style>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@100&display=swap');
+
+body *{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0px;
+}
+#container{
+    margin: 0;
+    background-color:#694597;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo{
+    color: rgb(255, 255, 255);
+    border: 3px solid #563781;
+    border-radius: 40px;
+    padding: 10px;
+    opacity: 10;
+    font-weight: bold;
+    position: relative;
+    top: -35%;
+}
+#bloco_central{
+    background-color: rgba(194, 194, 194, 0.308);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    opacity: 1;
+    border: 2px solid #0000007e;
+    box-shadow: 5px 5px 0px #0000007e;
+    border-radius: 40px;
+}
+#clicks{
+    font-weight: bold;
+    font-size: large;
+    transition: 0.3s;
+    position: absolute;
+    border: 3px solid #0000007a;
+    box-shadow: 3px 3px 0px #0000007a;
+    border-radius: 10px;
+    background-color: rgb(127, 81, 187);
+    color:rgb(255, 255, 255);
+    width: 120px;
+    height: 60px;
+    opacity: 10;
+}
+#clicks:active{
+    box-shadow: none;
+    transform: translateY(4px);
+}
